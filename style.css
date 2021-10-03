@@ -1,302 +1,95 @@
-:root {
-  --gRCustom: rgba(246, 196, 83, 1);
-
-  --oWCustom: rgba(254, 251, 233, 1);
-  --pumpkinSpice: rgba(240, 160, 75, 1);
-
-  --fGCustom: rgba(24, 58, 29, 1);
-
-  --cucumber: rgba(225, 238, 221, 1);
+:root::after,
+::before {
+  box-sizing: border-box;
 }
 
 * {
-  box-sizing: border-box;
-  font-family: "Amiri", serif;
+  box-sizing: inherit;
 }
 
-nav {
-}
-
-section {
-  min-height: 550px;
-}
-
-.container {
-  margin: 0 auto;
-  width: 1140px;
-  height: 100%;
-}
-
-.content {
-}
-
-#section1 {
-  background-color: var(--fGCustom);
-  display: flex;
-  align-items: stretch;
-  margin: 0%;
-  padding: 0;
-}
-
-#container-1 {
-  height: 550px;
-  background: linear-gradient(
-      0deg,
-      rgba(225, 221, 29, 0%),
-      rgba(225, 221, 29, 0%)
-    ),
-    url(/img/super-wide-brown-takeout.jpeg);
-  background-blend-mode: multiply;
-  background-size: 125%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#section1-content {
-  margin: 128px 16px 0 16px;
-}
-
-#s1-text {
-  text-align: center;
-}
-
-#big-heading {
-  color: var(--fGCustom);
-
-  font-size: 72px;
-  line-height: 68px;
-  font-weight: 700;
-}
-
-#small-heading {
-  color: white;
-
-  font-size: 40px;
-  line-height: 48px;
-  font-weight: 700;
-
-  margin-top: 24px;
-}
-
-#main-browse-button {
-  margin-top: 24px;
-  font-size: 32px;
-
-  font-weight: 500;
-  padding: 8px 32px;
-  border-radius: 500px;
-  color: var(--oWCustom);
-  background-color: var(--fGCustom);
-}
-
-#section2 {
-}
-
-#section3 {
-}
-
-/* SECTION 4 */
-
-#section4 {
-  background: linear-gradient(
-      0deg,
-      rgba(24, 58, 29, 0%),
-      rgba(225, 238, 221, 0%)
-    ),
-    url(/img/vietnam-agriculture-farm-rice-field-gold-rice-field-farmland.jpeg);
-  background-blend-mode: multiply;
-  background-size: 120%;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 550px;
-}
-
-#s4-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 550px;
-}
-
-#s4-left-bg {
-  background-color: rgba(225, 238, 221, 50%);
-  height: 350px;
-  width: 90%;
-
-  margin: 35px 35px 35px 70px;
-}
-
-#s4-left {
-  width: 60%;
-
-  height: 350px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-}
-
-#trio-container {
-  height: 250px;
-  width: 300px;
-  top: -50px;
-  left: -50px;
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.trio-outer {
-}
-
-.s4-trio {
-  width: 28vw;
-  height: 21vh;
-  position: absolute;
-}
-
-#trio-1-outer {
-  align-self: flex-end;
-}
-
-#trio-3-outer {
-  align-self: flex-end;
-}
-
-#trio-1 {
-  background-image: url(./img/coconut-harvest.jpeg);
-
-  background-position: 0px 0px 10px 10px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-#trio-2 {
-  background-image: url(/img/coconut-fiber-vietnam.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-#trio-3 {
-  background: url(/img/brown-takeout-landscape.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.trio-content {
-  height: 100%;
+.section {
   width: 100%;
 }
 
-#tc-1 {
-  background: rgba(225, 238, 221, 90%);
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  font-family: "Amiri", serif;
+  width: 1140px;
 }
 
-#tc-2 {
-  background: rgba(225, 238, 221, 90%);
+/* Section2 */
+#section2 .container {
+  color: #183a1d;
+  background-color: #fefbe9;
+  padding-top: 30px;
 }
-
-#tc-3 {
-  background: rgba(225, 238, 221, 90%);
+#section2 h1 {
+  text-align: center;
+  font-size: xx-large;
+  color: #183a1d;
 }
-
-.trio-heading {
-  font-size: 24px;
-  line-height: 18px;
+#section2 h2 {
+  text-align: center;
 }
-
-.trio-text {
-  line-height: 18px;
-}
-
-#s4-right {
-  width: 40%;
-  background: rgba(24, 58, 29, 90%);
-  padding: 1rem;
-  color: var(--cucumber);
-}
-
-#s4-right.topic-heading {
-}
-
-/* SECTION 5 */
-#section5 {
-  background-color: var(--fGCustom);
-  min-height: 650px;
-  display: flex;
-  align-items: center;
-}
-
-#s5-content {
-  height: 600px;
+#section2 .main-materials {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: var(--cucumber);
+  position: relative;
+  text-align: center;
+  background-color: #fefbe9;
 }
-
-#s5-left {
-  width: 35%;
-  margin: 1rem;
-  color: var(--fGCustom);
-}
-
-.topic-text {
-  font-size: 18px;
-}
-
-.topic-heading {
-  font-size: 32px;
-}
-
-#s5-right-bg {
-  width: 65%;
-  height: 550px;
-  background-color: var(--fGCustom);
-  margin-right: 1rem;
-}
-
-#s5-right {
-  height: 500px;
+#section2 .other-materials {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  margin: 1.5rem 1rem 1rem 1rem;
+  justify-content: space-evenly;
+  background-color: #e1eedd;
+  padding: 20px;
+  text-align: center;
 }
-
-.bio-row {
+#section2 .text {
+  width: 90%;
+  margin: 0 auto;
+}
+#section2 .bold {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+#section2 hr.solid {
+  border-top: 2px solid #f6c453;
+  width: 45px;
+}
+#section2 .border-1 {
+  border: 2px dotted #f6c453;
+  padding: 10px;
+  border-radius: 15px 15px;
+  font-weight: bold;
+}
+#section2 .text:hover {
+  background-color: #183a1d;
+  color: white;
+}
+#section2 .zoom {
+  padding: 10px;
+  transition: transform 0.2s;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+#section2 .zoom:hover {
+  transform: scale(1.2);
+}
+/* Section3 */
+#section3 .container {
+  background-color: #fefbe9;
+}
+#section3 .product-B {
   display: flex;
-  background-color: var(--cucumber);
-  height: 32%;
+  justify-content: space-around;
 }
-
-.bio-text {
-  padding: 1rem;
-  margin: 0 1rem;
-  width: 85%;
-  color: var(--fGCustom);
-  font-size: 16px;
-  line-height: 18px;
+#section3 .product-L {
+  display: flex;
+  justify-content: space-around;
 }
-
-.founder-name {
-  font-size: 20px;
-  line-height: 18px;
-  padding: 0;
-  margin: 0;
-}
-
-.found-intro {
-  line-height: 24px;
-  padding: 0;
-  margin: 0;
-}
-
-.bio-img {
-  min-width: 15%;
-
-  background-color: white;
+#section3 .left-40 {
+  margin-left: 40px;
 }
